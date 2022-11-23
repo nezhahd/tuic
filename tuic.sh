@@ -259,7 +259,7 @@ cat <<EOF > /root/tuic/v2rayn.json
         "max_udp_relay_packet_size": 1500
     },
     "local": {
-        "port": 1080,
+        "port": 6080,
         "ip": "127.0.0.1"
     },
     "log_level": "off"
