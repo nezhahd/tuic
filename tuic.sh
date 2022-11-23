@@ -252,6 +252,7 @@ cat <<EOF > /root/tuic/v2rayn.json
         "token": "$pswd",
         "ip": "$ip",
         "congestion_controller": "bbr",
+        "udp_relay_mode": "quic",
         "alpn": ["h3"],
         "disable_sni": false,
         "reduce_rtt": false,
