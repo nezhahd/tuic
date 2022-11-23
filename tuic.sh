@@ -442,7 +442,7 @@ if [[ -n $(systemctl status tuic 2>/dev/null | grep -w active) && -f '/etc/tuic/
 green "已安装tuic，重装请先执行卸载功能" && exit
 fi
 rm -f /etc/systemd/system/tuic.service
-rm -rf /usr/local/bin/tuic /etc/tuic /root/tuic /root/tuic.sh /usr/bin/tu
+rm -rf /usr/local/bin/tuic /etc/tuic /root/tuic /usr/bin/tu
 insupdate ; instucore ; inscertificate ; insport ; inspswd ; insconfig
 if [[ -n $(systemctl status tuic 2>/dev/null | grep -w active) && -f '/etc/tuic/tuic.json' ]]; then
 green "tuic服务启动成功"
